@@ -52,13 +52,20 @@
   </div>
 
   <script>
-    function showTab(tabId) {
-      document.querySelectorAll('.tab-content').forEach(tab => {
-        tab.style.display = 'none';
-      });
-      document.getElementById(tabId).style.display = 'block';
-    }
-  </script>
+  function showTab(tabId) {
+    // Hide all sections
+    document.querySelectorAll('.tab-content').forEach(tab => {
+      tab.style.display = 'none';
+    });
+    // Show the selected section
+    document.getElementById(tabId).style.display = 'block';
+
+    // Highlight the active button
+    document.querySelectorAll('.navbar button').forEach(btn => btn.classList.remove('active-tab'));
+    event.target.classList.add('active-tab');
+  }
+</script>
+
 
 </body>
 </html>
