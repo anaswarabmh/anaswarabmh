@@ -94,3 +94,24 @@ a:hover {
   opacity: 0.8;
   margin: 0;
 }
+.contact-item {
+  margin-bottom: 25px;
+}
+
+.contact-item p {
+  margin: 0;
+  color: #555; /* Neutral color for descriptions */
+}
+
+.contact-item h4 {
+  margin: 5px 0;
+  color: #007bff; /* Matching your blue link color */
+}
+
+.contact-item a {
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
