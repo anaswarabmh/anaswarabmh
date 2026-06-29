@@ -47,20 +47,32 @@ a:hover {
     border-bottom: 1px solid #3e4f5f;
   }
 }
+/* Update the navbar container to use flexbox for better alignment */
 .navbar {
   background-color: #2c3e50;
   padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* This allows buttons to wrap naturally if needed */
 }
 
+/* Make buttons smaller so they fit better */
 .navbar button {
   background-color: transparent;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 12px; /* Reduced padding */
   cursor: pointer;
   font-weight: bold;
+  font-size: 13px; /* Slightly smaller font */
 }
+
+/* Ensure the active state remains visible */
+.active-tab {
+  background-color: #007bff !important;
+  border-bottom: 3px solid #ffcc00;
+}
+
 
 .navbar button:hover {
   background-color: #007bff;
@@ -74,8 +86,5 @@ a:hover {
   background-color: #007bff !important;
   border-bottom: 3px solid #ffcc00;
 }
-.active-tab {
-  background-color: #007bff !important;
-  border-bottom: 3px solid #ffcc00;
-}
+
 
