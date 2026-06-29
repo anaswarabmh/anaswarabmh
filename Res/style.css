@@ -74,4 +74,8 @@ a:hover {
   background-color: #007bff !important;
   border-bottom: 3px solid #ffcc00;
 }
+.active-tab {
+  background-color: #007bff !important;
+  border-bottom: 3px solid #ffcc00;
+}
 
