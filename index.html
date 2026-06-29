@@ -15,23 +15,19 @@
     <button onclick="showTab('contact')">Contact</button>
   </nav>
 
+  <!-- About Section -->
   <div id="about" class="tab-content">
     <h1>👩‍⚕️ Anaswara</h1>
     <h2>Registered Nurse</h2>
-    <div id="about" class="tab-content">
-  <h1>👩‍⚕️ Anaswara</h1>
-  <h2>Registered Nurse</h2>
-  
-  <!-- Add this highlighted box -->
-  <div style="background-color: #f4f7f6; padding: 15px; border-left: 5px solid #2c3e50; margin-bottom: 20px;">
-    <strong>Professional Profile:</strong><br>
-    Dedicated Registered Nurse with hands-on experience in emergency care and patient monitoring. Passionate about evidence-based practice and delivering high-quality clinical outcomes.
+    
+    <div style="background-color: #f4f7f6; padding: 15px; border-left: 5px solid #2c3e50; margin-bottom: 20px;">
+      <strong>Professional Profile:</strong><br>
+      Dedicated Registered Nurse with hands-on experience in emergency care and patient monitoring. Passionate about evidence-based practice and delivering high-quality clinical outcomes.
+    </div>
+
+    <h3>About Me</h3>
+    <p>I am a compassionate and detail-oriented Registered Nurse committed to delivering high-quality, patient-centered care. My clinical philosophy centers on the belief that empathy, safety, and clear communication are the foundations of effective nursing. I pride myself on my ability to remain calm under pressure, my dedication to continuous professional development, and my proactive approach to identifying and meeting patient needs.</p>
   </div>
-
-  <h3>About Me</h3>
-  <p>I am a compassionate and detail-oriented Registered Nurse committed to delivering high-quality, patient-centered care. My clinical philosophy centers on the belief that empathy, safety, and clear communication are the foundations of effective nursing. I pride myself on my ability to remain calm under pressure, my dedication to continuous professional development, and my proactive approach to identifying and meeting patient needs.</p>
-</div>
-
 
   <div id="experience" class="tab-content" style="display:none;">
     <h3>Work Experience</h3>
@@ -57,29 +53,24 @@
   </div>
 
   <div id="contact" class="tab-content" style="display:none;">
-  <h3>Contact</h3>
-  <p>Email: <a href="mailto:anaswarabmh@gmail.com">anaswarabmh@gmail.com</a></p>
-  <p>Phone: <a href="tel:+919207934817">+91 9207934817</a></p>
-  <p>Download my full resume: <a href="Res/resume.pdf" target="_blank">Download Resume</a></p>
-</div>
-
-
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:anaswarabmh@gmail.com">anaswarabmh@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919207934817">+91 9207934817</a></p>
+    <p>Download my full resume: <a href="Res/resume.pdf" target="_blank">Download Resume</a></p>
+  </div>
 
   <script>
-  function showTab(tabId) {
-    // Hide all sections
-    document.querySelectorAll('.tab-content').forEach(tab => {
-      tab.style.display = 'none';
-    });
-    // Show the selected section
-    document.getElementById(tabId).style.display = 'block';
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.style.display = 'none';
+      });
+      document.getElementById(tabId).style.display = 'block';
 
-    // Highlight the active button
-    document.querySelectorAll('.navbar button').forEach(btn => btn.classList.remove('active-tab'));
-    event.target.classList.add('active-tab');
-  }
-</script>
-
+      document.querySelectorAll('.navbar button').forEach(btn => btn.classList.remove('active-tab'));
+      event.target.classList.add('active-tab');
+    }
+  </script>
 
 </body>
 </html>
+
