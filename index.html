@@ -9,11 +9,12 @@
 <body>
 
   <nav class="navbar">
-    <button onclick="showTab('about')">About</button>
-    <button onclick="showTab('experience')">Experience</button>
-    <button onclick="showTab('skills')">Skills</button>
-    <button onclick="showTab('contact')">Contact</button>
-  </nav>
+  <button class="active-tab" onclick="showTab('about')">About</button>
+  <button onclick="showTab('experience')">Experience</button>
+  <button onclick="showTab('skills')">Skills</button>
+  <button onclick="showTab('contact')">Contact</button>
+</nav>
+
 
   <!-- About Section -->
   <div id="about" class="tab-content">
@@ -59,17 +60,23 @@
     <p>Download my full resume: <a href="Res/resume.pdf" target="_blank">Download Resume</a></p>
   </div>
 
-  <script>
-    function showTab(tabId) {
-      document.querySelectorAll('.tab-content').forEach(tab => {
-        tab.style.display = 'none';
-      });
-      document.getElementById(tabId).style.display = 'block';
+<script>
+  function showTab(tabId) {
+    // Hide all sections
+    document.querySelectorAll('.tab-content').forEach(tab => {
+      tab.style.display = 'none';
+    });
+    // Show the selected section
+    document.getElementById(tabId).style.display = 'block';
 
-      document.querySelectorAll('.navbar button').forEach(btn => btn.classList.remove('active-tab'));
-      event.target.classList.add('active-tab');
-    }
-  </script>
+    // Highlight the clicked button
+    document.querySelectorAll('.navbar button').forEach(btn => btn.classList.remove('active-tab'));
+    
+    // Use currentTarget to ensure we always style the button itself
+    event.currentTarget.classList.add('active-tab');
+  }
+</script>
+
 
 </body>
 </html>
