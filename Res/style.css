@@ -69,4 +69,9 @@ a:hover {
 .tab-content {
   padding: 20px;
 }
+/* Style for when a tab button is clicked/active */
+.active-tab {
+  background-color: #007bff !important;
+  border-bottom: 3px solid #ffcc00;
+}
 
