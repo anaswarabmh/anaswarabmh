@@ -10,3 +10,13 @@ Welcome to my GitHub profile! I am a dedicated Registered Nurse committed to pro
 - 📚 Committed to continuous learning and evidence-based nursing practice
 - 🤝 Dedicated to teamwork, patient safety, and professional ethics
 - 🌱 Always striving to improve my knowledge and clinical skills
+## 🛠️ Skills
+
+- 🩺 Patient Assessment
+- 💊 Medication Administration
+- 🩹 Wound Care
+- 🚑 Basic Life Support (BLS)
+- 🏥 Infection Prevention & Control
+- 📋 Patient Documentation
+- 🤝 Communication & Teamwork
+- ❤️ Compassionate Patient Care
