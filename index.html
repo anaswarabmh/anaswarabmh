@@ -3,95 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Anaswara - Nurse Portfolio</title>
-   <link rel="stylesheet" href="Res/style.css">
+  <link rel="stylesheet" href="Res/style.css">
 </head>
 <body>
-  <!-- Navigation -->
-<nav class="navbar">
-  <button onclick="showTab('about')">About</button>
-  <button onclick="showTab('experience')">Experience</button>
-  <button onclick="showTab('skills')">Skills</button>
-  <button onclick="showTab('contact')">Contact</button>
-</nav>
 
-<!-- Tab Content -->
-<div id="about" class="tab-content">
-  <h3>About Me</h3>
-  <p>I am a compassionate and detail-oriented Registered Nurse...</p>
-</div>
+  <nav class="navbar">
+    <button onclick="showTab('about')">About</button>
+    <button onclick="showTab('experience')">Experience</button>
+    <button onclick="showTab('skills')">Skills</button>
+    <button onclick="showTab('contact')">Contact</button>
+  </nav>
 
-<div id="experience" class="tab-content" style="display:none;">
-  <h3>Work Experience</h3>
-  <p>Nursing Officer | Baby Memorial Hospital...</p>
-</div>
+  <div id="about" class="tab-content">
+    <h1>👩‍⚕️ Anaswara</h1>
+    <h2>Registered Nurse</h2>
+    <p>I am a compassionate and detail-oriented Registered Nurse committed to delivering high-quality, patient-centered care. My clinical philosophy centers on the belief that empathy, safety, and clear communication are the foundations of effective nursing. I pride myself on my ability to remain calm under pressure, my dedication to continuous professional development, and my proactive approach to identifying and meeting patient needs.</p>
+  </div>
 
-<div id="skills" class="tab-content" style="display:none;">
-  <h3>Skills</h3>
-  <p>Patient Care, Medication Administration, Wound Care...</p>
-</div>
+  <div id="experience" class="tab-content" style="display:none;">
+    <h3>Work Experience</h3>
+    <ul>
+      <li><strong>Nursing Officer</strong> | Baby Memorial Hospital, Kozhikode | Sept 2023 - Present</li>
+      <li>Responsible for initial client care, monitoring vital signs, administering emergency medications, and performing procedures such as IV cannulisation, ECGs, and wound dressings.</li>
+    </ul>
+    <h3>Education</h3>
+    <ul>
+      <li><strong>Bachelor of Science in Nursing</strong> | Sree Anjaneya College of Nursing, Kerala University of Health Sciences (2018 - 2023)</li>
+    </ul>
+  </div>
 
-<div id="contact" class="tab-content" style="display:none;">
-  <h3>Contact</h3>
-  <p>Email: anaswarabmh@gmail.com...</p>
-</div>
+  <div id="skills" class="tab-content" style="display:none;">
+    <h3>Equipment Proficiency</h3>
+    <ul>
+      <li>Cardiac Monitors, Defibrillators, BiPAP, Syringe/Infusion/Suction Pumps, and O₂ Flowmeters.</li>
+    </ul>
+    <h3>Skills</h3>
+    <ul>
+      <li>Patient Care, Medication Administration, Wound Care, BLS Certified, Electronic Health Records (EHR)</li>
+    </ul>
+  </div>
 
+  <div id="contact" class="tab-content" style="display:none;">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:anaswarabmh@gmail.com">anaswarabmh@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919207934817">+91 9207934817</a></p>
+    <p>Download my full resume: <a href="Res/resume.pdf" target="_blank">Download Resume</a></p>
+  </div>
 
-  <h1>👩‍⚕️ Anaswara</h1>
-  <h2>Registered Nurse</h2>
-
-  <p>Welcome to my professional portfolio website.</p>
-
-  <h3 id="about">About Me</h3>
-  <p>  I am a compassionate and detail-oriented Registered Nurse committed to delivering high-quality, patient-centered care. My clinical philosophy centers on the belief that empathy, safety, and clear communication are the foundations of effective nursing. I pride myself on my ability to remain calm under pressure, my dedication to continuous professional development, and my proactive approach to identifying and meeting patient needs </p>
-
-    <h3 id="experience">Work Experience</h3>
-  <ul>
-    <li><strong>Nursing Officer</strong> | Baby Memorial Hospital, Kozhikode | Sept 2023 - Present</li>
-    <li>Responsible for initial client care, monitoring vital signs, administering emergency medications, and performing procedures such as IV cannulisation, ECGs, and wound dressings.</li>
-  </ul>
-
-  <h3>Education</h3>
-  <ul>
-    <li><strong>Bachelor of Science in Nursing</strong> | Sree Anjaneya College of Nursing, Kerala University of Health Sciences (2018 - 2023)</li>
-  </ul>
-
-  <h3>Equipment Proficiency</h3>
-  <ul>
-    <li>Cardiac Monitors, Defibrillators, BiPAP, Syringe/Infusion/Suction Pumps, and O₂ Flowmeters.</li>
-  </ul>
-
-
-  <h3 id="skills">Skills</h3>
-  <ul>
-    <li>Patient Care</li>
-    <li>Medication Administration</li>
-    <li>Wound Care</li>
-    <li>BLS Certified</li>
-    <li>Electronic Health Records (EHR)</li>
-  </ul>
-
-
-  <h3>Languages</h3>
-  <ul>
-    <li>English (Fluent)</li>
-    <li>Malayalam (Native)</li>
-  </ul>
-
-  <h3>Clinical Interests</h3>
-  <ul>
-    <li>General Medicine</li>
-    <li>Patient Education</li>
-    <li>Emergency Triage</li>
-  </ul>
-
-    <h3 id="contact">Contact</h3>
-  <p>Email: <a href="mailto:anaswarabmh@gmail.com">anaswarabmh@gmail.com</a></p>
-  <p>Phone: <a href="tel:+919207934817">+91 9207934817</a></p>
-  <p>Download my full resume: <a href="Res/resume.pdf" target="_blank">Download Resume</a></p>
-
-
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.style.display = 'none';
+      });
+      document.getElementById(tabId).style.display = 'block';
+    }
+  </script>
 
 </body>
 </html>
