@@ -26,13 +26,14 @@ a:hover {
   position: sticky;
   top: 0;
 }
-
 .navbar a {
   color: white;
-  padding: 10px 20px;
+  padding: 10px 10px; /* Reduced side padding from 20px to 10px */
   text-decoration: none;
   font-weight: bold;
+  font-size: 14px;    /* Added a slightly smaller font size */
 }
+
 
 .navbar a:hover {
   background-color: #007bff;
