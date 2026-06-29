@@ -1,150 +1,109 @@
-/* 1. Import a Modern Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-/* 2. Page Background & Main Container */
+/* 1. Page Background & Main Container */
 html {
-  background-color: #f4f7f6; /* Soft light gray background for the screen */
+  background-color: #f4f7f6; /* Soft light gray for the outer page */
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.7;
+  font-family: sans-serif;
   max-width: 800px;
-  margin: 40px auto; /* Centers the page with space at top and bottom */
+  margin: 40px auto; /* Centers the page */
   padding: 40px;
   background-color: #ffffff; /* White background for your content */
   color: #444444;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft shadow for a "card" effect */
-  border-radius: 12px; /* Rounded corners */
+  border-radius: 12px; /* Smooth corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle depth */
 }
-
-/* 3. Headings & Typography */
-h1 {
-  color: #2c3e50;
-  margin-bottom: 5px;
-  font-weight: 600;
-}
-
-h2 {
-  color: #7f8c8d;
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-
-h3 {
-  color: #2c3e50;
-  border-bottom: 2px solid #ecf0f1;
-  padding-bottom: 8px;
-  margin-top: 30px;
-  font-weight: 600;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-/* 4. Navigation Menu */
+/* 2. Navigation Menu */
 .navbar {
-  background-color: #ffffff;
-  padding: 15px 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  position: sticky;
-  top: 0;
-  border-bottom: 1px solid #ecf0f1;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 2px solid #f4f7f6;
   margin-bottom: 20px;
-  z-index: 100;
 }
 
 .navbar button {
-  background-color: transparent;
-  color: #7f8c8d;
+  background: none;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 15px;
   cursor: pointer;
-  font-weight: 600;
-  font-size: 14px;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 30px; /* Pill-shaped buttons */
-  transition: all 0.3s ease; /* Smooth hover effect */
+  font-weight: bold;
+  color: #7f8c8d;
+  transition: color 0.3s;
 }
 
 .navbar button:hover {
-  background-color: #f4f7f6;
   color: #2c3e50;
 }
 
 .active-tab {
-  background-color: #007bff !important;
-  color: #ffffff !important;
-  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  color: #007bff !important;
+  border-bottom: 2px solid #007bff;
+}
+/* 3. Headings & Typography */
+h1 {
+  color: #2c3e50;
+  margin: 0 0 5px 0;
 }
 
-/* 5. Tab Content & Lists */
-.tab-content {
-  padding: 10px 0;
-  animation: fadeIn 0.4s ease-in-out; /* Smooth fade when switching tabs */
+h2 {
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
 }
 
+h3 {
+  color: #2c3e50;
+  margin-top: 30px;
+  border-bottom: 2px solid #f4f7f6;
+  padding-bottom: 5px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* 4. Professional Highlight Box (for the About section) */
+.highlight-box {
+  background-color: #f8faff;
+  padding: 15px;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+/* 5. Lists & Spacing */
 ul {
   padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-/* 6. Profile Highlight Box */
-.profile-box {
-  background-color: #f8faff;
-  padding: 20px;
-  border-left: 5px solid #007bff;
-  border-radius: 0 8px 8px 0;
-  margin-bottom: 30px;
-}
-
-/* 7. Contact Section (From your requested vertical style) */
+/* 6. Contact Section Links */
 .contact-item {
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-.contact-item p {
-  margin: 0;
-  color: #7f8c8d;
-  font-size: 14px;
+.contact-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.contact-item h4 {
-  margin: 5px 0;
-  font-size: 18px;
+.contact-item a:hover {
+  text-decoration: underline;
 }
 
-/* 8. Smooth Fade-in Animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(5px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* 9. Mobile Responsiveness */
+/* 7. Mobile Adjustments */
 @media (max-width: 600px) {
   body {
     margin: 10px;
     padding: 20px;
-  }
-  .navbar button {
-    padding: 8px 12px;
-    font-size: 13px;
+    border-radius: 0; /* Full width on mobile */
   }
 }
