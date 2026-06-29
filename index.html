@@ -8,12 +8,35 @@
    <link rel="stylesheet" href="Res/style.css">
 </head>
 <body>
-    <nav class="navbar">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Navigation -->
+<nav class="navbar">
+  <button onclick="showTab('about')">About</button>
+  <button onclick="showTab('experience')">Experience</button>
+  <button onclick="showTab('skills')">Skills</button>
+  <button onclick="showTab('contact')">Contact</button>
+</nav>
+
+<!-- Tab Content -->
+<div id="about" class="tab-content">
+  <h3>About Me</h3>
+  <p>I am a compassionate and detail-oriented Registered Nurse...</p>
+</div>
+
+<div id="experience" class="tab-content" style="display:none;">
+  <h3>Work Experience</h3>
+  <p>Nursing Officer | Baby Memorial Hospital...</p>
+</div>
+
+<div id="skills" class="tab-content" style="display:none;">
+  <h3>Skills</h3>
+  <p>Patient Care, Medication Administration, Wound Care...</p>
+</div>
+
+<div id="contact" class="tab-content" style="display:none;">
+  <h3>Contact</h3>
+  <p>Email: anaswarabmh@gmail.com...</p>
+</div>
+
 
   <h1>👩‍⚕️ Anaswara</h1>
   <h2>Registered Nurse</h2>
