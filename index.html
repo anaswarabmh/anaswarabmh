@@ -13,6 +13,11 @@
   <button onclick="showTab('experience')">Experience</button>
   <button onclick="showTab('skills')">Skills</button>
   <button onclick="showTab('contact')">Contact</button>
+    <nav class="navbar">
+  <!-- Your existing buttons -->
+  <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+</nav>
+
 </nav>
 
 
@@ -91,6 +96,12 @@
     event.currentTarget.classList.add('active-tab');
   }
 </script>
+  <script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
 <footer>
   <p>&copy; 2026 Aswin A. All rights reserved.</p>
 </footer>
