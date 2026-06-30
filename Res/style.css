@@ -245,3 +245,42 @@ body.dark-mode h1, body.dark-mode h3 {
 body.dark-mode .navbar {
   background: rgba(30, 30, 30, 0.8);
 }
+/* Permanent Dark Theme */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.tab-content {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #333;
+  margin-top: 20px;
+  color: #cccccc;
+}
+
+h1, h3 {
+  color: #ffffff;
+}
+
+.navbar {
+  background: rgba(30, 30, 30, 0.8);
+  border-bottom: 1px solid #333;
+}
+
+.navbar button {
+  color: #aaaaaa;
+}
+
+.navbar button:hover {
+  color: #ffffff;
+}
+
+.active-tab {
+  color: #ffffff !important;
+  border-bottom: 2px solid #007bff;
+}
