@@ -198,3 +198,16 @@ footer {
   margin-top: 40px;
   border-top: 1px solid #ecf0f1;
 }
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.7); /* Slight transparency */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
