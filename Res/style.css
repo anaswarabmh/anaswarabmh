@@ -157,3 +157,35 @@ h3 {
 .navbar button:active {
   transform: scale(0.95); /* Tiny "press" effect when clicked */
 }
+/* Better readability */
+body {
+  color: #333333;
+  letter-spacing: 0.2px;
+}
+
+/* More prominent headings */
+h3 {
+  color: #111111;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+/* Update your .active-tab style to this */
+.active-tab {
+  background-color: #007bff !important;
+  color: #ffffff !important;
+  border-bottom: none !important; /* Remove the underline since we have a background now */
+}
+/* Customize bullet points */
+ul {
+  list-style-type: none;
+}
+
+li::before {
+  content: "•";
+  color: #007bff; /* Use your accent blue */
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
