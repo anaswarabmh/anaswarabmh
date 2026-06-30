@@ -129,3 +129,7 @@ li {
   top: 0;
   z-index: 1000;
 }
+.tab-content {
+  padding: 20px;
+  min-height: 300px;
+}
