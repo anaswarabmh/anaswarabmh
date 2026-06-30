@@ -107,3 +107,13 @@ li {
     border-radius: 0; /* Full width on mobile */
   }
 }
+/* Enhanced hover effects for links */
+.contact-item a {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.contact-item a:hover {
+  transform: translateX(5px);
+  color: #0056b3;
+}
