@@ -309,3 +309,24 @@ h1, h3 {
 .profile-animate {
   animation: slideIn 0.8s ease-out forwards;
 }
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skill-pill {
+  background-color: #333333;
+  color: #007bff; /* Matches your accent color */
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid #444;
+  transition: transform 0.2s ease;
+}
+
+.skill-pill:hover {
+  transform: translateY(-2px);
+  background-color: #444444;
+}
