@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anaswara - Nurse Portfolio</title>
+  <link rel="stylesheet" href="Res/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <button class="active-tab" onclick="showTab('about', event)">About</button>
+    <button onclick="showTab('experience', event)">Experience</button>
+    <button onclick="showTab('skills', event)">Skills</button>
+    <button onclick="showTab('contact', event)">Contact</button>
+  </nav>
+
+  <div id="about" class="tab-content">
+    <h1>👩‍⚕️ Anaswara</h1>
+    <h2>Registered Nurse</h2>
+    
+    <div class="profile-animate" style="background-color: #2c2c2c; padding: 15px; border-left: 5px solid #007bff; margin-bottom: 20px; color: #e0e0e0; border-radius: 4px;">
+      <strong>Professional Profile:</strong><br>
+      Dedicated Registered Nurse with hands-on experience in emergency care and patient monitoring. Passionate about evidence-based practice and delivering high-quality clinical outcomes.
+    </div>
+
+    <h3>About Me</h3>
+    <p>I am a compassionate and detail-oriented Registered Nurse committed to delivering high-quality, patient-centered care. My clinical philosophy centers on the belief that empathy, safety, and clear communication are the foundations of effective nursing. I pride myself on my ability to remain calm under pressure, my dedication to continuous professional development, and my proactive approach to identifying and meeting patient needs.</p>
+  </div>
+
+  <div id="experience" class="tab-content" style="display:none;">
+    <h3>Work Experience</h3>
+    <ul>
+      <li><strong>Nursing Officer</strong> | Baby Memorial Hospital, Kozhikode | Sept 2023 - Present</li>
+      <li>Responsible for initial client care, monitoring vital signs, administering emergency medications, and performing procedures such as IV cannulisation, ECGs, and wound dressings.</li>
+    </ul>
+    <h3>Education</h3>
+    <ul>
+      <li><strong>Bachelor of Science in Nursing</strong> | Sree Anjaneya College of Nursing, Kerala University of Health Sciences (2018 - 2023)</li>
+    </ul>
+  </div>
+
+  <div id="skills" class="tab-content" style="display:none;">
+    <h3>Equipment Proficiency</h3>
+    <ul>
+      <li>Cardiac Monitors, Defibrillators, BiPAP, Syringe/Infusion/Suction Pumps, and O₂ Flowmeters.</li>
+    </ul>
+    <h3>Skills</h3>
+    <ul>
+      <li>Patient Care, Medication Administration, Wound Care, BLS Certified, Electronic Health Records (EHR)</li>
+    </ul>
+  </div>
+
+  <div id="contact" class="tab-content" style="display:none;">
+    <h3>GET IN TOUCH</h3>
+    <p>Open to Nursing roles in Kozhikode or surrounding areas | Immediate Joiner</p>
+
+    <div class="contact-item">
+      <p>💬 WhatsApp</p>
+      <a href="https://wa.me/919567863206">Chat Instantly</a>
+    </div>
+
+    <div class="contact-item">
+      <p>✉️ Email</p>
+      <a href="mailto:anaswarabmh@gmail.com">anaswarabmh@gmail.com</a>
+    </div>
+  </div>
+
+  <script>
+    function showTab(tabId, event) {
+      // Hide all sections
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.style.display = 'none';
+      });
+      // Show the selected section
+      document.getElementById(tabId).style.display = 'block';
+
+      // Highlight the clicked button
+      document.querySelectorAll('.navbar button').forEach(btn => btn.classList.remove('active-tab'));
+      event.currentTarget.classList.add('active-tab');
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2026 Aswin A. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
