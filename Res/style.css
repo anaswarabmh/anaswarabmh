@@ -189,3 +189,12 @@ li::before {
   width: 1em;
   margin-left: -1em;
 }
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.85rem;
+  color: #95a5a6;
+  margin-top: 40px;
+  border-top: 1px solid #ecf0f1;
+}
