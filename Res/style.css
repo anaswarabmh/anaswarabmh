@@ -293,3 +293,11 @@ h1, h3 {
 .highlight-box p {
   color: #333333;
 }
+/* Darkened style for the profile box to match the dark theme */
+.highlight-box {
+  background-color: #2c2c2c; /* Deep grey background */
+  color: #e0e0e0;           /* Light text for readability */
+  padding: 15px;
+  border-left: 4px solid #007bff; /* Keeps the blue accent */
+  border-radius: 4px;
+}
