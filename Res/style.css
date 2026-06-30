@@ -301,3 +301,11 @@ h1, h3 {
   border-left: 4px solid #007bff; /* Keeps the blue accent */
   border-radius: 4px;
 }
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-animate {
+  animation: slideIn 0.8s ease-out forwards;
+}
